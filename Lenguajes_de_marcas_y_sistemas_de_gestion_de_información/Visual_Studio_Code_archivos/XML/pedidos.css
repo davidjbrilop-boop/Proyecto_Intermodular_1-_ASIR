@@ -1,0 +1,53 @@
+/* General */
+sistema_pedidos {
+    display: block;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Títulos de secciones */
+productos, pedidos {
+    display: block;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Etiquetas de nombre */
+nombre, cliente {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+/* Etiquetas de datos */
+precio, fecha {
+    display: block;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+/* Cada bloque de producto o pedido */
+producto, pedido {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+/* El detalle del pedido */
+detalle {
+    display: list-item;
+    margin-left: 30px;
+    color: #555;
+}
+
+/* Mostrar los atributos (esto es limitado en CSS puro) */
+detalle:before {
+    content: "Producto REF: " attr(ref_prod) " - Cantidad: " attr(cantidad);
+    font-style: italic;
+}

@@ -1,0 +1,51 @@
+{
+  "sistema_pedidos": {
+    "productos": [
+      {
+        "id_prod": "P001",
+        "nombre": "Marlboro Duro",
+        "precio": 4.00
+      },
+      {
+        "id_prod": "P002",
+        "nombre": "Winston Classic",
+        "precio": 3.95
+      },
+      {
+        "id_prod": "P003",
+        "nombre": "Chesterfield Duro",
+        "precio": 3.90
+      },
+      {
+        "id_prod": "P004",
+        "nombre": "Lucky",
+        "precio": 3.90
+      }
+    ],
+    "pedidos": [
+      {
+        "id_ped": "PED-101",
+        "cliente": "Angel Pérez",
+        "fecha": "2024-04-27",
+        "detalles": [
+          {
+            "ref_prod": "P001",
+            "cantidad": 2
+          },
+          {
+            "ref_prod": "P002",
+            "cantidad": 1
+          },
+          {
+            "ref_prod": "P003",
+            "cantidad": 3
+          },
+          {
+            "ref_prod": "P004",
+            "cantidad": 1
+          }
+        ]
+      }
+    ]
+  }
+}

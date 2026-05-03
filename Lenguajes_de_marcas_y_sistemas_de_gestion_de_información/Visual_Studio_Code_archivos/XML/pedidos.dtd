@@ -1,0 +1,17 @@
+<!ELEMENT sistema_pedidos (productos, pedidos)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precio)>
+<!ATTLIST producto 
+    id_prod ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido (cliente, fecha, detalle+)>
+<!ATTLIST pedido 
+    id_ped ID #REQUIRED>
+<!ELEMENT cliente (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT detalle EMPTY>
+<!ATTLIST detalle 
+    ref_prod IDREF #REQUIRED
+    cantidad CDATA #REQUIRED>

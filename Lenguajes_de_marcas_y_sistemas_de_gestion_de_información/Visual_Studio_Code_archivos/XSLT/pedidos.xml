@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pedidos2.xsl"?>
+<!-- <!DOCTYPE sistema_pedidos SYSTEM "pedidos.dtd"> -->
+<sistema_pedidos>
+    <productos>
+        <producto id_prod="P001">
+            <nombre>Marlboro Duro</nombre>
+            <precio>4.00</precio>
+        </producto>
+        <producto id_prod="P002">
+            <nombre>Winston Classic</nombre>
+            <precio>3.95</precio>
+        </producto>
+        <producto id_prod="P003">
+            <nombre>Chesterfield Duro</nombre>
+            <precio>3.90</precio>
+        </producto>
+        <producto id_prod="P004">
+            <nombre>Lucky</nombre>
+            <precio>3.90</precio>
+        </producto>
+    </productos>
+    <pedidos>
+        <pedido id_ped="PED-101">
+            <cliente>Angel Pérez</cliente>
+            <fecha>2024-04-27</fecha>
+            <detalle ref_prod="P001" cantidad="2"/>
+            <detalle ref_prod="P002" cantidad="1"/>
+            <detalle ref_prod="P004" cantidad="3"/>
+        </pedido>
+        <pedido id_ped="PED-102">
+            <cliente>Maria García</cliente>
+            <fecha>2024-04-28</fecha>
+            <detalle ref_prod="P003" cantidad="10"/>
+        </pedido>
+    </pedidos>
+</sistema_pedidos>

@@ -41,4 +41,6 @@ En este proyecto está desarrollado en cada una de las asignaturas que a continu
 
 6. **[🌐 Planificación y Administración de Redes](./Planificación_y_administración_de_redes/README.md)**
 
+
+#### PD: En cada carpeta con el nombre de la asignatura, se encuentran el resto de archivos entregables
 ---
